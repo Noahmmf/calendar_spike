@@ -25,6 +25,18 @@ Fullcalendar is a calendar for react projects that is highly customizable. I pla
 
 ## Testing
 
-I have created this repository to test out Fullcalendar. Initially very overwhelming and hard to understand what is needed. I finally got a calendar to render on the screen after 2 hours. 
+* I have created this repository to test out Fullcalendar. Initially very overwhelming and hard to understand what is needed. I finally got a calendar to render on the screen after 2 hours. 
 
 ![](/public/First_calendar.png)
+
+* I was able to render the time grid that allows view of the current day in hours. Also was able to figure how to use mock data to show up on calendar. 
+
+```
+const events = [
+  { title: `Noah's lunch`, start: new Date() },
+  { title: 'Pick up Honor @4', start: new Date() },
+  { title: 'Meeting', start: new Date() }
+]
+```
+
+![](/public/time_grid.png)
