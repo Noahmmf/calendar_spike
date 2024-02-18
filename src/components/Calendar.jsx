@@ -1,27 +1,28 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import FullCalendar from '@fullcalendar/react'
 import dayGridPlugin from '@fullcalendar/daygrid'
 import timeGridDay from '@fullcalendar/timegrid'
-
-const events = [
-  { title: `Noah's lunch`, start: new Date() },
-  { title: 'Pick up Honor @4', start: new Date() },
-  { title: 'Meeting', start: new Date() }
-]
+import listPlugin from '@fullcalendar/list'
+import { useDispatch, useSelector } from 'react-redux'
 
 
 
 export default function Calendar(){
 
+  const events = useSelector(store => store.event);
+
+
   return (
     <div>
-      <h1>HeartSync Demo</h1>
+      <h1>HeartSync Cal Demo</h1>
       <FullCalendar
-        plugins={[dayGridPlugin, timeGridDay]}
+        plugins={[dayGridPlugin, timeGridDay, listPlugin]}
         initialView='timeGridDay'
         weekends={true}
+        
         events={events}
         eventContent={renderEventContent}
+        
       />
     </div>
   )

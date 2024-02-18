@@ -40,3 +40,19 @@ const events = [
 ```
 
 ![](/public/time_grid.png)
+
+## Calendar Plugins
+- To display calendar grid you must import   @fullcalendar/daygrid and set the initial view to 'dayGridMonth' other initial views/navigation can be implimented to alter view of calendar. 
+
+
+## Styling: bootstrap 5
+ link for css: 
+ <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+ link for script: 
+ <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
+
+
+## issues
+
+- cannot set up redux to try send seed data to calendar. 
+- issues with using only what I want to use (timeGridDay)
