@@ -41,6 +41,11 @@ const events = [
 
 ![](/public/time_grid.png)
 
+* set up basic redux for data with event objects above.
+
+* set up form but cannot figure out how to correctly format date structure
+    - using moment.js to format date correctly but cannot 
+
 ## Calendar Plugins
 - To display calendar grid you must import   @fullcalendar/daygrid and set the initial view to 'dayGridMonth' other initial views/navigation can be implimented to alter view of calendar. 
 
